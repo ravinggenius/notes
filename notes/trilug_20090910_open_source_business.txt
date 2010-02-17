@@ -1,0 +1,66 @@
+opennms.com
+
+jeffrey moore - crossing the chasm (business book)
+
+need
+* laptop
+* cell phone
+* website
+* forge (code hosting)
+
+business plan: spend less than you earn!
+mission statement: help customers, have fun, make money (from dilbert)
+
+product is key
+
+* determine your product
+* build an awesome application or tool
+* found a company or foundation (eclipse, apache)
+* make sure there is enough money
+* keep your real job (for now)
+* license and copyright
+  * compare GPL and MIT
+  * owner of the copyright can change the license and defend the code from license abuse
+  * dual copyright
+* make an open source business a business
+  * majority of people buy from the number one or two in any field
+* form a corporation
+  * sole proprietorship
+  * limited liability company
+    * must have two members
+  * c-corp
+  * s-corp
+    * investors may not participate in business
+* accountant
+* liability insurance
+* trademarks
+* GET STARTED
+  * start writting code
+* create a product
+* separate work from home
+* create a blog
+* GET DOWN TO BUSINESS
+* participate
+* create a mailing list or forum
+* build a community
+* start marketing
+* easy pricing
+* rule of net 30
+* get a crm
+* get a trouble ticketing system
+* write statements of work
+  * what customer should expect
+* renewals
+* get health insurance
+* find a payroll service
+* get a 401K
+* get dental insurance
+* get short term disability insurance
+* get long term disability insurance
+
+technology adoption life cycle
+* innovators
+* early adopters
+* early majority
+* late majority
+* laggards

@@ -1,0 +1,58 @@
+have a job
+(Me)Linda Garcia - Connection Technology
+
+
+---
+PostgreSQL 8.4 features
+Andrew Dunstan
+
+Philosophy
+  - stability
+  - safety
+  - correctness
+  - robustness
+  - standards-compliance
+  - performance
+Features
+  - multi-version concurrency control (mvcc)
+    - readers don't block writers
+    - writers don't block readers
+  - extensive and extensible type system
+    - strings, mac addresses etc
+  - joins and subqueries
+  - foreign keys
+  - namespaces (schemas)
+  - triggers
+  - stored functions
+    - can be written in many languages, including ruby (plRuby)
+  - standard modules
+    - pgcrypto, dblink, uuid-ossp, ltree
+  - transactional DDL
+  - point-in-time recovery
+New Features
+  - common table expressions
+    - with t as ( select a, b, c from foo )
+      select * from t;
+    - with t as ( select a, b, c from foo )
+      s as ( select a, b, e from bar )
+      select b, d from t, s
+    - with recursive f as 
+        ( select 0::numeric as a, 1::numeric as b, 1::int as r
+        union ...
+    - transitive closure with CTE
+      - can replace nested set
+  - window functions (similair to aggregates)
+    - select *, row_number() over (order by foo) as rownum
+      from bar
+      order by foo
+    - select *, row_number() over t as rownum
+      from bar
+      window t as (order by foo)
+      order by foo
+  - parallel restore
+  - column permissions
+  - variadic functions (splat arguments in ruby)
+  - per database locales
+  - significant performance improvements
+  - version aware psql command
+

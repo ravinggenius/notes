@@ -1,0 +1,54 @@
+---
+semantic web:
+  - http://www.fogbeam.com/semantic_web_links.html
+  - automated web
+  - in early stages: like streaming video in 1995
+  - genome industry particularly like semantics
+  - automatic machine translation?
+structured data:
+  - rdf: http://www.w3.org/RDF/
+  - microformats: http://microformats.org/
+    - emphasis on ease of use
+    - prefers class names
+  - yahoo and google both index microformats:
+    - richer search results (this is rating, this is the company's address): http://www.google.com/search?q=site%3Ayelp.com+big+easy+raleigh
+    - yahoo query language
+  - view source: http://www.yelp.com/biz/the-big-easy-raleigh (microformats (class names))
+  - dbpedia:
+    - converts wikipedia data into structured data
+    - sparql: sql for structured data
+  - linked data project: http://linkeddata.org/
+views:
+  - machine readable data
+  - distributed database
+  - better anotation
+  - improved searching:
+    - searching by content instead of just keywords
+    - PICS
+  - web services
+enabling tech:
+  - XML
+  - RDF (RDFS, RDFa)
+  - OWL (OWL-Lite, OWL-DS, OWL-FULL)
+  - SPARQL: query language for rdf
+  - RULEML
+  - GRDDL
+  - vocabularies | working groups:
+    - FOAF (Friend Of A Friend)
+    - DOAC (Discription Of A Career)
+    - DOAP (Discription Of A Project)
+    - SKOS (Semantically Interlinked Online Communities):
+      - distributed discussion
+    - Dublin Core
+    - Good Relation (product, shopping carts)
+    - SIOC
+triples:
+  - most fundamental property
+  - subject -> property -> value (the ball is red)
+  - turtle
+  - n3
+  - n-triples
+trust:
+  - PGP: identity
+  - distributed
+  - third-party

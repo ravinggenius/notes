@@ -1,0 +1,38 @@
+The Rubyist's Guide to Dating
+Rick DeNatale
+
+RFC-2445 (iCalendar format)
+
+Hours
+Time Zones
+  not really an issue until travelling speed and distance increased
+  blame New Zealand
+    first to legislate time zones
+  Olson's Time Zone Database
+    tzinfo gem wraps this database
+Daylight Savings
+  blame Benjamin Franklin
+  blame New Zealand
+  blame World War I
+Recurring Events
+  Martin Fowler - temporal expressions
+    runt
+    texp
+  iCalendar
+    RecurrenceRule
+      frequency - yearly, daily, secondly, etc
+      by - yearday, month, weekno, weekday, setpos, etc
+      may or may not be bounded
+    ExceptionRule
+    RecurrenceDates
+    ExceptionDates
+    OccurenceEnumerator
+      merges multiple RRULES, RDATES, EXRULES, EXDATES
+    start time allowed to be outside RRULE (depricated, sorta)
+RiCal
+  works with TZInfo or ActiveSupport
+  Time class has platform dependent cutoff
+  DateTime
+    overly complex
+    slow
+  RiCal implements a custome DateTime

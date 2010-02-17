@@ -1,0 +1,24 @@
+=SIMPLE
+RESTfulAuth
+Authlogic
+Clearance
+Authentable (RESTfulAuth + BCrypt)
+
+=CAS - Central Authentication Service
+Rubycas Server
+Castronaut
+	External to app
+	Multiple authentication sources
+	Single Sign On
+	Harder to test
+	Harder to deploy
+
+=SERVICE - authentication without username/password
+O-Auth code.google.com/p/oauth/
+	Token - like a valet key
+	Fairly new
+
+=LESSONS
+Don't roll your own
+Split admin concerns - separate app for administration
+TEST THE AUTHENTICATION
