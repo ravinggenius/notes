@@ -21,6 +21,8 @@ agile:
     improves language
     stories become living, functional spec
 cucumber: http://cukes.info/
+  business analysis tool
+    acceptance testing
   stories become executable tests
   business-readable DSL
   ruby library
