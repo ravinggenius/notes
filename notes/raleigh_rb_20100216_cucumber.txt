@@ -1,2 +1,52 @@
 ---
-
+announcements:
+  TEDex:
+    http://tedextrianglenc.com/
+  Developer Day:
+    http://developer-day.com/
+miscommunication == waste
+  wrong features
+  incorrect features
+agile:
+  user stories
+  test driven development
+    write test first
+  story driven development
+    stay lean
+    create value
+    minimum work to satisfy
+    why questions
+      who the stakeholders are
+      etc
+    improves language
+    stories become living, functional spec
+cucumber: http://cukes.info/
+  stories become executable tests
+  business-readable DSL
+  ruby library
+  integration tests
+  keywords:
+    scenario
+    given: pre-conditions
+    when: action
+    then: post-conditions
+  stories:
+    value proposition
+      Feature: single name or theme
+    pop the why stack
+      In order to make, protect or save money
+      As a stakeholder
+      I want to have some feature
+    example:
+      Feature: School account management
+        In order to maximize revenue by offering Schoobinder to multiple schools at once
+        As a site owner
+        I want to provide individual accounts to each school and manage them
+        Scenerio: List accounts
+          Given I am logged in as a the site owner
+          When I go to the accounts page
+          Then ...
+    imperative < descriptive
+    descriptive stories are flexible
+    strike balance between verbosity and terseness
+    avoid conjunctive statements
