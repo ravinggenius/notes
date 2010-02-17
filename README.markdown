@@ -1,1 +1,1 @@
-Experimental Sinatra project using Compass.
+Simple project to serve notes in YAML format.
