@@ -66,6 +66,32 @@ dojo:
 lightning talks:
   progressive enhancements
   node.js
+Inheritence (Alex Sexton)
+  http://alexsexton.com/
+  classical
+  prototypal
+  pseudoclassical
+    constructor functions
+    new operator
+    function prototype
+    classes should be capitalized
+      var Constructor = function (args) { //... };
+      Constructor.prototype.myMethod = function () {};
+      var c = new Contructor();
+      var cc = Object.create();
+  module pattern
+tdd
+  BlueRidge
+    Screw.Unit
+    run headless with rino
+  Jasmine
+    new hotness
+  riot.js ???
+
+
+
+
+
 
 
 
