@@ -50,7 +50,7 @@ dojo:
   var Person = function (args) {
     dojo.mixin(this, args);
   };
-  dojo.extend(Person, {
+  dojo.extend(Person, { // defaults...
     name: '...',
     clicker: function (args) {
       alert(args);
@@ -64,7 +64,8 @@ dojo:
   });
   p.name; // Thomas
 lightning talks:
-
+  progressive enhancements
+  node.js
 
 
 
