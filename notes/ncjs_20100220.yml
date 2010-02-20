@@ -5,9 +5,69 @@ talks:
   ! dojo
   ! jquery performance
   ! html5
+  ! accessability
   ! offline mvc
   ! introductory regex
   inheritence
   jquery ui
   blueridge and jasmine (tdd)
   rossetta
+html5 webapps:
+  canvas
+    2d drawing api
+    cufon text (sp?)
+    xcanvas (library for ie)
+  geolocation
+  microdata/vocabularies
+  cross-doc messaging
+  channel messaging
+  forms
+  http://bit.ly/webapps-complete
+  constraint validation:
+    jquery validation plugin
+    validity object
+  document.querySelector('css selector here')
+  jsFiddle
+  http://miketaylr.com/pres/ncjs/app/
+dojo:
+  dojo.require('dojo.fx');
+  dojo.ready(function () {
+    var $ = dojo.query;
+    $('div').onclick(function (e) {
+      e.preventDefault(); // don't need return false;
+    });
+  });
+  dojo.ready(function () {
+    var n = dojo.byId('bar');
+  });
+  (function ($, d) {
+    var fn = function (n, args) {
+      n = d.byId(n);
+      args = args || {};
+    }
+    d.NodeList.prototype.makeIt = d.NodeList._adaptAsForEach(fn);
+  })(dojo.query, dojo);
+  var Person = function (args) {
+    dojo.mixin(this, args);
+  };
+  dojo.extend(Person, {
+    name: '...',
+    clicker: function (args) {
+      alert(args);
+    }
+  });
+  var p = new Person({
+    name: 'Thomas',
+    clicker: function (args) {
+      // don't alert...
+    }
+  });
+  p.name; // Thomas
+lightning talks:
+
+
+
+
+
+
+
