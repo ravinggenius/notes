@@ -1,2 +1,25 @@
 ---
-
+http://robsanheim.com/
+Ruby Dependency Management
+  principles
+    automation
+    repeatable
+    kiss
+    dry
+  tools
+    bundler
+      declare all dependencies
+        rubygems
+        git repos
+        manual vendor dependencies
+      one ball of awesome
+      smart dependency resolution
+        using gem 'rails', '~> 2.3.2' will work with 2.3.2..2.3.*
+      gotchas
+        things are moving fast
+        cleanup old version
+        duplication between Gemfile and Gemspec
+        not much documentation
+    capistrano
+    chef
+    rake, ruby, bash
