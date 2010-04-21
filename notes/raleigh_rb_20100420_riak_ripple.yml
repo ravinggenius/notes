@@ -1,0 +1,86 @@
+---
+basho
+riak
+  key value store
+    bucket-key pairs
+    simple REST API
+  document-oriented
+    store values as JSON
+    map reduce built on top of JSON
+  web-shaped storage
+    content neutral (like memcached)
+    highly distributed
+    replicated
+  influences
+    CAP theorem
+      consistent: reads and writes reflect a globally consistent state
+      available: system is available for reads and writes
+      partition tolerant: system can handle the failure of individual parts
+      pick two... for each operation
+    amazon's dynamo paper
+      n: number of replicas
+      r: number of replicas needed for a successful read
+      w: number of replicas needed for a successful write
+      n - r: read fault tolerance
+      n - w: write fault tolerance
+      n can vary per bucket
+      r and w can vary per operation
+    experience running large networks (akamai)
+    resolving conflicts
+      focuses on the ap in cap
+      vector clocks
+        logical time, not wall clock time
+        more than a serial key
+      n desparate versions
+        bubble conflict as something like a diff on next read or write
+        client picks winner
+      can be set per bucket or server
+      or can be set to "last write wins"
+        enabled by default
+        needed 80% of the time
+ripple
+  provides riak and ripple gems
+  riak gem
+    all the basics
+      client
+      buckets
+      objects
+      link-walking
+      map/reduce
+    links
+      one-way, qualified pointers to other objects
+      link header in HTTP
+      like web links
+    link-walking
+      GET /riak/bucket/key/[bucket,tag,keep]*
+        bucket: scope to a bucket
+        tag: scope to a tag
+        keep: return results (last one always returns)
+        '_' means match anything
+      GET /riak/artists/TheBeatles/albums,_,1/tracks,_,1
+    map-reduce
+      based on google's map-reduce
+      high data-locality
+      phases can be javascript or erlang
+      terminology
+        job: a query, composed of inputs and phases
+        phase: a single map or reduce function
+        map: phase applied to each item - filter, transform
+          inputs are bucket-key pairs
+          must return a list
+          performed on all nodes
+        reduce: phase applied to the collection - aggregates (sorting, grouping etc)
+          performed on a single node (in two processes)
+          must return a list
+  ripple gem
+    document-style persistence (like mongomapper)
+    activemodel niceties
+      callbacks
+      validations
+      actionpack compatible
+    todo
+      associations
+      indexes
+      use a property/method as the key
+      dynamic finders
+      session/cache stores
