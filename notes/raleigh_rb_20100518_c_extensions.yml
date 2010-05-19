@@ -1,0 +1,42 @@
+---
+Why:
+  performance
+  wrap a C api
+  access to Ruby profiler / Ruby internals
+  wrap existing C library to test in Ruby
+Examples:
+  ...
+Pattern:
+  ruby.rb
+    include the module defined in C, call it like it is Ruby
+  c_file.c
+  ruby extconf.rb
+  make
+Data Types:
+  Qnil, Qtrue, Qfalse
+  RBignum, RFloat, ...
+  VALUE == Object
+hexawise.com:
+Alternatives:
+  stop, isolate (require 'benchmark') & think
+  don't do it: take the trouble code out somehow
+  keyboard -> whiteboard
+  do it "right" (Google, Knuth): look for other implementations
+  optimize: know how to profile
+  RubyInline
+  C++
+    C superset
+    SWIG: http://swig.org/
+    Rice: http://rice.rubyforge.org/
+  JRuby/Java
+    drop into Java
+  Haskell
+    Hubris: http://github.com/mwotton/hubris
+  D
+    RuDy: http://github.com/tomash/rudy
+  FFI - foreign function interface (look this up!)
+References:
+  http://www.ociweb.com/mark/nfjs/RubyCExtensions.pdf
+  http://www.rubyinside.com/how-to-create-a-ruby-extension-in-c-in-under-5-minutes-100.html
+  http://www.java2s.com/Tutorial/C/CatalogC.htm
+  http://www.java2s.com/Tutorial/C/CatalogC.htm <- look this up in last side
