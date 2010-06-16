@@ -1,3 +1,61 @@
---
+---
 Rapid Prototyping and Customer Development: The Hacker's Guide to Software Design
-
+"Good design is exactly what my clients would do if they had my knowledge and skill set."
+Assumptions:
+  My clients know their business better than anyone else
+  The best way I can can assist them...
+Customer Development: An iterative process of finding customers and leveraging their feedback...
+How it's done:
+  An idea
+  An assertion
+  An experiment
+  Customer feedback
+  Repeat
+"Agile" for business
+Rapid prototyping: get a feel for how the product...
+Think big: don't underestimate the value of research and brainstorming
+Build small: "Take the features you think you need and cut it in half."
+Identify the heart of the app
+Build and Rebuild: Don't be afraid to throw things away. Prototyping is about learning.
+Good design is about good conversations
+Design tools:
+  whiteboards
+    great for brainstorming with customers
+    great for illustrating flow
+    lightweight
+    hard to take with you
+  wireframes
+    moderately lightweight
+    capture more detail
+    easy to showoff to customers and stakeholders
+    anyone can build them
+  paper prototyping
+    paper/pen
+    balsamiq mockups
+    omnigraffle
+  hifi mockups
+    one step from HTML
+    help establish look and feel (also tone)
+    typically require professional design help
+    most potential for error
+    fireworks
+  html prototypes
+    allow you to test flow
+    can be improved over time
+    great for client and customer conversations
+    can be leveraged for actual application (between 1/4 to 1/3 of the final effort)
+    serve framework (on github)
+  functional prototypes
+    great for refining algorithms, user interactions, gestures, anything that is complex
+    also great for client and customer conversations
+    don't need to be written in the target language
+  other tools
+    showoff (in-app prototypes)
+    web app theme (rails template)
+    compass (css meta-framework)
+    little snapper (research for a client)
+    skitch (screenshots)
+resources
+  http://leanstartupprimer.com/more
+  http://wiseheartdesign.com/weblog
+  radiant prototype and mockups
