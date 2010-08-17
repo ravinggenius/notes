@@ -1,0 +1,31 @@
+---
+Metrics
+  a measurment of some kind
+Experiments
+  find the most effective way to do something
+Tools
+  Google website optimizer
+    javascript based
+    integrates with analytics
+    supports multivariate testing
+  Seven Minute ABs
+    rails plugin
+    defunct?
+  Vanity
+    rails gem
+    uses redis
+    integrates with analytics
+  ABingo
+    rails plugin
+    uses activerecord
+    has a radiant extension
+  Roll your own
+    make sure A and B have equal chance of being seen
+    track visitors and present the same option on each visit
+Iterations
+  hypothesis
+  run test
+  decide
+  profit!
+Resources
+  http://abtest.com/
