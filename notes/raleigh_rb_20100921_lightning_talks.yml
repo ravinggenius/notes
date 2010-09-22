@@ -1,0 +1,46 @@
+---
+Lightning Talks
+  Matthew Bass
+    coding is fun, but time should be given to a hobby
+    HAM radio
+      lisenced via FCC
+      HF can be used worldwide
+      VFH is more local
+      not just voice
+        slow scan tv
+        packet radio
+      emergency communication backup
+      homebrew: do it yourself
+        antennas
+        etc
+      ARRL
+  Chris
+    Radient-based CRM
+    plugs into CampaignMonitor
+    GWIT: Google Web Toolkit
+    ported FatFree CRM as extension to Radiant
+    sdmsuite.com
+  Rick DeNatalie
+    TechShop
+    HackerSpace in space
+    balloon space capsule
+      camera
+      HAM radio
+      GPS
+  Sean
+    property based testing
+      QuickCheck
+      abstract model
+      random inputs run against your code
+      useful for stand-alone functions with no side effects
+    qc.js
+      QuickCheck ported to JavaScript
+    RQC
+      QuickCheck ported to Ruby
+  Rick DeNatalie
+    map-reduce
+    Dan Ingles
+  guy
+    achieving long-term goals
+      need to spend time actually making progress towards a goal
+      find a sustainable pace
