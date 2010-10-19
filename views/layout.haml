@@ -1,31 +1,31 @@
-!!! XML
-!!!
+!!! 5
 %html{ :lang => 'en', :xmlns => 'http://www.w3.org/1999/xhtml', 'xml:lang' => 'en'}
   %head
     %title= @title
 
-    / Meta
-    %meta{ 'http-equiv' => 'Content-Type', 'content' => 'text/html; charset=utf-8' }
+    %meta{ 'http-equiv' => 'Content-Type', 'content' => 'text/html; charset=utf-8' }/
 
-    / FavIcon
-    %link{ :rel => 'shortcut icon', :href => '' }
+    / %link{ :rel => 'shortcut icon', :href => '/images/favicon.ico' }/
 
-    / CSS
-    %style{ :type => 'text/css', :media => 'all'} @import url('http://assets.ravinggenius.com/css?html5reset=1.4');
-    %style{ :type => 'text/css', :media => 'all'} @import url('/styles/application.css');
+    = partial :script_tags, :files => ['http://assets.ravinggenius.com/js?modernizr=1.1&jquery=1.4', '/scripts/application.js']
 
-    / JavaScript
-    %script{ :type => 'text/javascript', :src => 'http://assets.ravinggenius.com/js?jquery=1.4' }
-    %script{ :type => 'text/javascript', :src => '/scripts/application.js' }
+    = partial :style_tags, :files => ['http://assets.ravinggenius.com/css?html5reset=1.4', '/styles/application.css']
+
+    = partial :tracking_google, :google_analytics_tracking_code => 'UA-xxxxxxx-xx'
 
   %body
-    = yield
+    %header#branding
+      %a{ :href => '/' }
+        %span.h= @site_name
+      %span= @site_tagline
 
-    :javascript
-      var gaJsHost = ((document.location.protocol == 'https:') ? 'https://ssl.' : 'http://www.');
-      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-      try {
-        var pageTracker = _gat._getTracker('UA-xxxxxxx-xx');
-        pageTracker._trackPageview();
-      } catch (err) {
-      }
+    %nav#main_menu
+      = partial :menu
+
+    %section#content
+      = yield
+
+    %footer#credits
+      %small#copyright= "&copy; #{@site_name}"
+
+    = partial :tracking_woopra
